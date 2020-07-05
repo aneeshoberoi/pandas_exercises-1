@@ -1,0 +1,6 @@
+Translation 1:
+SQL: select item_name, max(price_float) from chipo group by item_name 
+Python: product_prices=chipo.groupby('item_name').agg({'price_float': 'max'})
+
+Get first 7 columns: dataframe.iloc[row_begin:row_end, col_beg:col_end] ==> dataframe.iloc[:,:7] ==> first ":" implies all rows + second ":" implies columns from beg to 7
+
