@@ -1,3 +1,5 @@
+======7/5/2020=============
+=====Filtering and Sorting: Chipotle + Euro12=========================
 Translation 1:
 SQL: select item_name, max(price_float) from chipo group by item_name 
 Python: product_prices=chipo.groupby('item_name').agg({'price_float': 'max'})
